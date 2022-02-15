@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 const Container = styled.div`
   display: flex;
-  width: ${({ width }) => (width ? `${width}px` : "110px")};
-  height: ${({ height }) => (height ? `${height}px` : "40px")};
+  width: ${({ width }) => (width ? `${width}%` : "110px")};
+  height: ${({ height }) => (height ? `${height}%` : "40px")};
   color: ${({ border }) => (border ? "teal" : "white")};
   border: ${({ border }) => border && "1px solid teal"};
   margin-top: ${({ mt }) => mt && `${mt}px`};
@@ -12,7 +12,6 @@ const Container = styled.div`
   margin-right: ${({ mr }) => mr && `${mr}px`};
   margin-bottom: ${({ mb }) => mb && `${mb}px`};
   filter: drop-shadow(4px 8px 16px rgba(25, 85, 53, 0.4));
-  /* border-radius: 10px; */
   align-items: center;
   justify-content: center;
   white-space: nowrap;
