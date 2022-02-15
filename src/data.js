@@ -1,9 +1,19 @@
 import Slider1 from "./assets/images/background1.png";
 import Slider2 from "./assets/images/background2.png";
 import Slider3 from "./assets/images/background3.png";
+
 import Category1 from "./assets/images/category1.jpg";
 import Category2 from "./assets/images/category2.jpg";
 import Category3 from "./assets/images/category3.jpg";
+
+import Product1 from "./assets/images/product1.png";
+import Product2 from "./assets/images/product2.png";
+import Product3 from "./assets/images/product3.png";
+import Product4 from "./assets/images/product4.png";
+import Product5 from "./assets/images/product5.png";
+import Product6 from "./assets/images/product6.png";
+import Product7 from "./assets/images/product7.png";
+import Product8 from "./assets/images/product8.png";
 
 export const sliderItems = [
   {
@@ -50,34 +60,34 @@ export const categories = [
 export const popularProducts = [
   {
     id: 1,
-    img: "https://homensquesecuidam.com/wp-content/uploads/2017/09/Light-Jeans-Masculino-a-c-680x680%40imagify-tmp.jpg",
+    img: `${Product1}`,
   },
   {
     id: 2,
-    img: "https://homensquesecuidam.com/wp-content/uploads/2017/09/Light-Jeans-Masculino-a-c-680x680%40imagify-tmp.jpg",
+    img: `${Product2}`,
   },
   {
     id: 3,
-    img: "https://homensquesecuidam.com/wp-content/uploads/2017/09/Light-Jeans-Masculino-a-c-680x680%40imagify-tmp.jpg",
+    img: `${Product3}`,
   },
   {
     id: 4,
-    img: "https://homensquesecuidam.com/wp-content/uploads/2017/09/Light-Jeans-Masculino-a-c-680x680%40imagify-tmp.jpg",
+    img: `${Product4}`,
   },
   {
     id: 5,
-    img: "https://homensquesecuidam.com/wp-content/uploads/2017/09/Light-Jeans-Masculino-a-c-680x680%40imagify-tmp.jpg",
+    img: `${Product5}`,
   },
   {
     id: 6,
-    img: "https://homensquesecuidam.com/wp-content/uploads/2017/09/Light-Jeans-Masculino-a-c-680x680%40imagify-tmp.jpg",
+    img: `${Product6}`,
   },
   {
     id: 7,
-    img: "https://www.vintageindustries.nl/download_front/qympzk1762/2217_Arrow_Jacket_Forest.png",
+    img: `${Product7}`,
   },
   {
     id: 8,
-    img: "https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
+    img: `${Product8}`,
   },
 ];
