@@ -12,9 +12,10 @@ const Container = styled.div`
   margin-right: ${({ mr }) => mr && `${mr}px`};
   margin-bottom: ${({ mb }) => mb && `${mb}px`};
   filter: drop-shadow(4px 8px 16px rgba(25, 85, 53, 0.4));
-  border-radius: 10px;
+  /* border-radius: 10px; */
   align-items: center;
   justify-content: center;
+  white-space: nowrap;
   transition: all 0.3s;
   font-weight: 700;
   :active {
