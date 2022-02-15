@@ -1,6 +1,7 @@
 import { Send } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
+import { mobil } from "../resposive";
 
 const Container = styled.div`
   height: 60vh;
@@ -18,6 +19,7 @@ const Desc = styled.div`
   font-size: 24px;
   font-weight: 300;
   margin-bottom: 20px;
+  ${mobil({ textAlign: "center" })}
 `;
 const InputContainer = styled.div`
   width: 50%;
@@ -26,6 +28,7 @@ const InputContainer = styled.div`
   display: flex;
   justify-content: space-between;
   border: 1px solid gray;
+  ${mobil({ width: "80%" })}
 `;
 const Input = styled.input`
   flex: 8;

@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Newsletter from "../components/Newsletter";
 import Products from "../components/Products";
+import { mobil } from "../resposive";
 
 const Container = styled.div``;
 
@@ -18,17 +19,20 @@ const FilterContainer = styled.div`
 `;
 const Filter = styled.div`
   margin: 20px;
+  ${mobil({ margin: "0 18px", display: "flex", flexDirection: "column" })}
 `;
 
 const FilterText = styled.span`
   font-size: 20px;
   font-weight: 600;
   margin-right: 20px;
+  ${mobil({ marginRight: "0px" })}
 `;
 
 const Select = styled.select`
   padding: 10px;
   margin-right: 20px;
+  ${mobil({ margin: "10px 0" })}
 `;
 const Option = styled.option``;
 

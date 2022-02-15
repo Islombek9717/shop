@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import formBackground from "../assets/images/formbackground.webp";
 import Button from "../components/Generic/Button/Button";
+import { mobil } from "../resposive";
 
 const Container = styled.div`
   width: 100vw;
@@ -23,6 +24,7 @@ const Wrapper = styled.div`
   width: 40%;
   padding: 20px;
   background-color: #ffffff;
+  ${mobil({ width: "75%" })}
 `;
 const Title = styled.h1`
   font-size: 24px;

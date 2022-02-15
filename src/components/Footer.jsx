@@ -5,15 +5,18 @@ import {
   MailOutline,
   Phone,
   Room,
+  Telegram,
   Twitter,
 } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
 
 import Pay from "../assets/images/payment.png";
+import { mobil } from "../resposive";
 
 const Container = styled.div`
   display: flex;
+  ${mobil({ flexDirection: "column" })}
 `;
 const Left = styled.div`
   flex: 1;
@@ -29,7 +32,7 @@ const Desc = styled.p`
 const SocialContainer = styled.div`
   display: flex;
 `;
-const SocialIcon = styled.div`
+const SocialIcon = styled.a`
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -44,6 +47,7 @@ const SocialIcon = styled.div`
 const Center = styled.div`
   flex: 1;
   padding: 20px;
+  ${mobil({ display: "none" })}
 `;
 
 const Title = styled.h3`
@@ -65,6 +69,7 @@ const ListItem = styled.li`
 const Right = styled.div`
   flex: 1;
   padding: 20px;
+  ${mobil({ backgroundColor: "#fff8f8" })}
 `;
 
 const ContactItem = styled.div`
@@ -76,6 +81,8 @@ const ContactItem = styled.div`
 const Payment = styled.img`
   width: 50%;
 `;
+
+const Link = styled.a``;
 
 const Footer = () => {
   return (
@@ -89,16 +96,25 @@ const Footer = () => {
           chemicals.
         </Desc>
         <SocialContainer>
-          <SocialIcon color="3b5999">
+          <SocialIcon
+            href="https://www.facebook.com/islombek9717"
+            color="3b5999"
+          >
             <Facebook />
           </SocialIcon>
-          <SocialIcon color="aa379c">
+          <SocialIcon
+            href="https://www.instagram.com/islombek9717/"
+            color="aa379c"
+          >
             <Instagram />
           </SocialIcon>
-          <SocialIcon color="55afee">
-            <Twitter />
+          <SocialIcon href="https://t.me/islombek9717" color="55afee">
+            <Telegram />
           </SocialIcon>
-          <SocialIcon color="0270ad">
+          <SocialIcon
+            href="https://www.linkedin.com/in/islombek-sultonov-980311175/"
+            color="0270ad"
+          >
             <LinkedIn />
           </SocialIcon>
         </SocialContainer>

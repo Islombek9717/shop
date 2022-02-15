@@ -7,11 +7,13 @@ import Newsletter from "../components/Newsletter";
 import NewProduct1 from "../assets/images/NewProduct1.jpg";
 import { Add, Remove } from "@material-ui/icons";
 import Button from "../components/Generic/Button/Button";
+import { mobil } from "../resposive";
 
 const Container = styled.div``;
 const Wrapper = styled.div`
   padding: 50px;
   display: flex;
+  ${mobil({ padding: "10px", flexDirection: "column" })}
 `;
 const ImgContainer = styled.div`
   flex: 1;
@@ -19,11 +21,13 @@ const ImgContainer = styled.div`
 const InfoContainer = styled.div`
   flex: 1;
   padding: 0 50px;
+  ${mobil({ padding: "10px" })}
 `;
 const Image = styled.img`
   width: 100%;
   height: 90vh;
   object-fit: cover;
+  ${mobil({ height: "70vh" })}
 `;
 const Title = styled.h1`
   font-weight: 200;
@@ -41,6 +45,7 @@ const FilterContainer = styled.div`
   width: 50%;
   margin: 30px 0;
   justify-content: space-between;
+  ${mobil({ width: "100%", margin: "18px 0" })}
 `;
 
 const Filter = styled.div`
@@ -74,6 +79,7 @@ const AddContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  ${mobil({ width: "100%" })}
 `;
 
 const AmountContainer = styled.div`

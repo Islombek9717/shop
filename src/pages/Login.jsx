@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Button from "../components/Generic/Button/Button";
 import LoginBackground from "../assets/images/loginBackground.jpg";
+import { mobil } from "../resposive";
 
 const Container = styled.div`
   width: 100vw;
@@ -23,6 +24,7 @@ const Wrapper = styled.div`
   width: 25%;
   padding: 20px;
   background-color: #ffffff;
+  ${mobil({ width: "75%" })}
 `;
 const Title = styled.h1`
   font-size: 24px;
@@ -39,6 +41,7 @@ const Input = styled.input`
   min-width: 40%;
   margin: 10px 0;
   padding: 10px;
+  ${mobil({ margin: "8px 0" })}
 `;
 
 const Link = styled.a`

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Button from "../components/Generic/Button/Button";
+import { mobil } from "../resposive";
 
 const Container = styled.div`
   margin: 3px;
@@ -12,6 +13,7 @@ const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  ${mobil({ height: "50vh" })}
 `;
 const Info = styled.div`
   position: absolute;
@@ -29,14 +31,6 @@ const Title = styled.h1`
   margin-bottom: 20px;
   white-space: nowrap;
 `;
-// const Button = styled.button`
-//   border: none;
-//   padding: 10px;
-//   background-color: #ffffff;
-//   color: gray;
-//   cursor: pointer;
-//   font-weight: 600;
-// `;
 
 const CategoryItem = ({ item }) => {
   return (
