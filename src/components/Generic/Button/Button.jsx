@@ -11,6 +11,8 @@ const Container = styled.div`
   margin-left: ${({ ml }) => ml && `${ml}px`};
   margin-right: ${({ mr }) => mr && `${mr}px`};
   margin-bottom: ${({ mb }) => mb && `${mb}px`};
+  background-color: ${({ filled }) => filled && "teal"};
+  color: ${({ filled }) => filled && "white"};
   filter: drop-shadow(4px 8px 16px rgba(25, 85, 53, 0.4));
   align-items: center;
   justify-content: center;
@@ -27,7 +29,17 @@ const Container = styled.div`
   cursor: pointer;
 `;
 
-export const Button = ({ width, height, children, border, mr, ml, mt, mb }) => {
+export const Button = ({
+  width,
+  height,
+  children,
+  border,
+  filled,
+  mr,
+  ml,
+  mt,
+  mb,
+}) => {
   return (
     <Container
       mr={mr}
@@ -37,6 +49,7 @@ export const Button = ({ width, height, children, border, mr, ml, mt, mb }) => {
       border={border}
       width={width}
       height={height}
+      filled={filled}
     >
       {children}
     </Container>
