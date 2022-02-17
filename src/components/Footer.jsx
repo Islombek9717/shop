@@ -6,7 +6,6 @@ import {
   Phone,
   Room,
   Telegram,
-  Twitter,
 } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
@@ -81,8 +80,6 @@ const ContactItem = styled.div`
 const Payment = styled.img`
   width: 50%;
 `;
-
-const Link = styled.a``;
 
 const Footer = () => {
   return (

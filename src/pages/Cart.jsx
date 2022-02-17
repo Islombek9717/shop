@@ -7,10 +7,12 @@ import Navbar from "../components/Navbar";
 import Adidas from "../assets/images/adidas.jpg";
 import AdidasTshirt from "../assets/images/adidasTshirt.png";
 import { Add, Remove } from "@material-ui/icons";
+import { mobil } from "../resposive";
 
 const Container = styled.div``;
 const Wrapper = styled.div`
   padding: 20px;
+  ${mobil({ padding: "10px" })}
 `;
 const Title = styled.h1`
   font-weight: 300;
@@ -23,7 +25,9 @@ const Top = styled.div`
   padding: 20px;
 `;
 
-const TopTexts = styled.div``;
+const TopTexts = styled.div`
+  ${mobil({ display: "none" })}
+`;
 const Toptext = styled.span`
   text-decoration: underline;
   cursor: pointer;
@@ -33,6 +37,7 @@ const Toptext = styled.span`
 const Bottom = styled.div`
   display: flex;
   justify-content: space-between;
+  ${mobil({ flexDirection: "column" })}
 `;
 const Info = styled.div`
   flex: 3;
@@ -41,6 +46,7 @@ const Info = styled.div`
 const Product = styled.div`
   display: flex;
   justify-content: space-between;
+  ${mobil({ flexDirection: "column" })}
 `;
 const ProductDetail = styled.div`
   display: flex;
@@ -87,10 +93,12 @@ const ProductAmountContainer = styled.div`
 const ProductAmount = styled.div`
   font-size: 24px;
   margin: 5px;
+  ${mobil({ margin: "5px 15px" })}
 `;
 const ProductPrice = styled.div`
   font-size: 30px;
   font-weight: 200;
+  ${mobil({ marginBottom: "20px" })}
 `;
 
 const Hr = styled.hr`
@@ -112,7 +120,6 @@ const SummaryTitle = styled.h1`
 `;
 const SummaryItem = styled.div`
   margin: 20px 0;
-  font-size: 12px;
   display: flex;
   justify-content: space-between;
   font-weight: ${(props) => props.type === "total" && "500"};

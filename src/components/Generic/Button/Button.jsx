@@ -1,9 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import { mobil } from "../../../resposive";
 
 const Container = styled.div`
   display: flex;
   width: ${({ width }) => (width ? `${width}%` : "110px")};
+  ${mobil({ width: "48%", fontSize: "14px" })}
   height: ${({ height }) => (height ? `${height}%` : "40px")};
   color: ${({ border }) => (border ? "teal" : "white")};
   border: ${({ border }) => border && "1px solid teal"};
@@ -39,6 +41,7 @@ export const Button = ({
   ml,
   mt,
   mb,
+  responsive,
 }) => {
   return (
     <Container
@@ -46,6 +49,7 @@ export const Button = ({
       ml={ml}
       mt={mt}
       mb={mb}
+      responsive={responsive}
       border={border}
       width={width}
       height={height}
