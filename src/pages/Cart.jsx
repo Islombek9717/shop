@@ -112,6 +112,7 @@ const SummaryTitle = styled.h1`
 `;
 const SummaryItem = styled.div`
   margin: 20px 0;
+  font-size: 12px;
   display: flex;
   justify-content: space-between;
   font-weight: ${(props) => props.type === "total" && "500"};
