@@ -1,3 +1,10 @@
+import Home from "./pages/Home";
+import Product from "./pages/Product";
+import ProductList from "./pages/ProductList";
+import Cart from "./pages/Cart";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+
 import Slider1 from "./assets/images/background1.png";
 import Slider2 from "./assets/images/background2.png";
 import Slider3 from "./assets/images/background3.png";
@@ -44,16 +51,19 @@ export const categories = [
     id: 1,
     img: `${Category1}`,
     title: "SHIRT STYLE!",
+    cat: "shirt",
   },
   {
     id: 2,
     img: `${Category2}`,
     title: "LOUNGEWEAR LOVE",
+    cat: "loungewear",
   },
   {
     id: 3,
     img: `${Category3}`,
     title: "LIGHT JACKETS",
+    cat: "jackets",
   },
 ];
 
@@ -89,5 +99,44 @@ export const popularProducts = [
   {
     id: 8,
     img: `${Product8}`,
+  },
+];
+
+export const routes = [
+  {
+    id: 1,
+    pathname: "/home",
+    Element: Home,
+    hidden: false,
+  },
+  {
+    id: 2,
+    pathname: "/products/:category",
+    Element: ProductList,
+    hidden: false,
+  },
+  {
+    id: 3,
+    pathname: "/product/:id",
+    Element: Product,
+    hidden: false,
+  },
+  {
+    id: 4,
+    pathname: "/cart",
+    Element: Cart,
+    hidden: false,
+  },
+  {
+    id: 5,
+    pathname: "/login",
+    Element: Login,
+    hidden: true,
+  },
+  {
+    id: 6,
+    pathname: "/register",
+    Element: Register,
+    hidden: true,
   },
 ];

@@ -1,25 +1,29 @@
-import Cart from "./pages/Cart";
-import Home from "./pages/Home";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { routes } from "./data";
 import Login from "./pages/Login";
-import Product from "./pages/Product";
-import ProductList from "./pages/ProductList";
 import Register from "./pages/Register";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
+  const user = true;
   return (
-    <>
+    <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/">
-            <Home />
-          </Route>
-          <Route path="/products:category">
-            <Product />
-          </Route>
+          {routes.map(({ pathname, id, Element }) => (
+            <Route key={id} path={pathname} element={<Element />} />
+          ))}
+          <Route
+            path="/login"
+            {...(user ? <Navigate to={"/home"} /> : <Login />)}
+          />
+          <Route
+            path="/register"
+            {...(user ? <Navigate to={"/home"} /> : <Register />)}
+          />
+          <Route path="/" element={<Navigate to={"/home"} />} />
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
   );
 };
 
