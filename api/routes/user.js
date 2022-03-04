@@ -1,9 +1,5 @@
-const User = require("../models/User");
-const {
-  verifyToken,
-  verifyTokenAndAuthorization,
-  verifyTokenAndAdmin,
-} = require("./verifyToken");
+import User from "../models/User";
+import { verifyToken, verifyTokenAndAuthorization, verifyTokenAndAdmin } from "./verifyToken";
 
 const router = require("express").Router();
 
@@ -91,4 +87,4 @@ router.get("/stats", verifyTokenAndAdmin, async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;

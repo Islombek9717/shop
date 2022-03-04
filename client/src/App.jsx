@@ -20,7 +20,6 @@ const App = () => {
             path="/register"
             {...(user ? <Navigate to={"/home"} /> : <Register />)}
           />
-          <Route path="/" element={<Navigate to={"/home"} />} />
         </Routes>
       </BrowserRouter>
     </div>

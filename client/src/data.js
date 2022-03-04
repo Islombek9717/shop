@@ -105,7 +105,7 @@ export const popularProducts = [
 export const routes = [
   {
     id: 1,
-    pathname: "/home",
+    pathname: "/",
     Element: Home,
     hidden: false,
   },

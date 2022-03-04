@@ -1,9 +1,5 @@
-const Cart = require("../models/Cart");
-const {
-  verifyToken,
-  verifyTokenAndAuthorization,
-  verifyTokenAndAdmin,
-} = require("./verifyToken");
+import Cart from "../models/Cart";
+import { verifyToken, verifyTokenAndAuthorization, verifyTokenAndAdmin } from "./verifyToken";
 
 const router = require("express").Router();
 
@@ -67,4 +63,4 @@ router.get("/", verifyTokenAndAdmin, async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;
